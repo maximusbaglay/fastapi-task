@@ -16,4 +16,4 @@
 # Endpoint для получения данных:
 # Реализуйте GET-метод /data, который будет извлекать данные из ClickHouse и возвращать их в формате JSON.
 
-faststream run main:app
+# faststream run main:app
