@@ -17,3 +17,10 @@
 # Реализуйте GET-метод /data, который будет извлекать данные из ClickHouse и возвращать их в формате JSON.
 
 # faststream run main:app
+
+from database.connection import client  
+  
+ 
+if __name__ == "__main__":  
+    result = client.query('SELECT * FROM records')  
+    print(result.result_rows)

@@ -22,7 +22,8 @@ class Settings(BaseSettings):
     )  
   
     clickhouse: ConnectCh = ConnectCh()  
-    rabbit_url: str = "amqp://guest:guest@127.0.0.1:5672"  
+    rabbit_url: str = "amqp://guest:guest@127.0.0.1:5672"
+    queue_tasks: str = "tasks"
   
   
 settings = Settings()

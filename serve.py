@@ -2,7 +2,7 @@ import uvicorn
 from fastapi import FastAPI  
   
   
-from routers.database import moex_router  
+from routers.moex import moex_router  
   
 app = FastAPI()  
   
