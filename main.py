@@ -18,9 +18,19 @@
 
 # faststream run main:app
 
-from database.connection import client  
+# from database.connection import client  
   
  
-if __name__ == "__main__":  
-    result = client.query('SELECT * FROM records')  
-    print(result.result_rows)
+# if __name__ == "__main__":  
+#     result = client.query('SELECT * FROM records')  
+#     print(result.result_rows)
+    
+    
+    
+#     get_data
+
+
+
+# Запуск RabbitMQ и сервера.
+# faststream run main:app
+# python serve.py
