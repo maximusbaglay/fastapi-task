@@ -12,7 +12,7 @@ class ConnectCh(BaseModel):
     host: str = "127.0.0.1"
     port: int = 8123
     username: str = "default"
-    database: str = "fastapi_task"
+    database: str = "moex"
 
 
 class Settings(BaseSettings):

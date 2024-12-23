@@ -14,4 +14,4 @@ app = FastStream(broker)
 async def task(ticker: str):  
     print(ticker)
     
-# faststream run main:app
+# faststream run rabbit.subscriber:app
