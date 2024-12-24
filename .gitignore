@@ -3,3 +3,6 @@ query.py
 test_query.py
 load_data.py
 schemes.py
+venv
+.venv
+test-main.py

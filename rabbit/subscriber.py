@@ -13,5 +13,3 @@ app = FastStream(broker)
 @broker.subscriber(RabbitQueue(name="tasks", durable=True))  
 async def task(ticker: str):  
     print(ticker)
-    
-# faststream run rabbit.subscriber:app
