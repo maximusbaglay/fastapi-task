@@ -1,5 +1,5 @@
 Запуск FastAPI и FastStream:
-faststream run main:app - для FastAPI
+faststream run main:app
 
 Запуск RabbitMQ:
 faststream run rabbit.subscriber:app 
