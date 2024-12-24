@@ -42,8 +42,6 @@ async def send_data(data: Data):
         return {"message": "Сообщение передано успешно"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-    
-# Функция, которая будет извлекать сообщения из очереди и отправлять их в ClickHouse для хранения.
 
 async def get_data_from_queue() -> dict:
     rabbitmq_connection = pika.BlockingConnection(pika.ConnectionParameters(host="127.0.0.1"))
@@ -65,8 +63,6 @@ async def get_data_from_queue() -> dict:
 
     rabbitmq_connection.close()
     return {"message": "Очередь пуста"}
-
-# GET-метод /data, который будет извлекать данные из ClickHouse и возвращать их в формате JSON.
 
 @router.get("/data")
 async def get_data():
