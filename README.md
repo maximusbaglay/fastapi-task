@@ -1,8 +1,8 @@
-Запуск FastAPI и FastStream:
+Запуск FastAPI и FastStream:/n
 faststream run main:app
 
-Запуск RabbitMQ:
+Запуск RabbitMQ:/n
 faststream run rabbit.subscriber:app 
 
-Запуска сервера:
+Запуска сервера:/n
 python server.py
